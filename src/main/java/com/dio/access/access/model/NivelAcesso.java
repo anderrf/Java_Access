@@ -1,7 +1,6 @@
 package com.dio.access.access.model;
-import lombok.*;
 
-import java.util.Objects;
+import lombok.*;
 
 @Getter
 @Setter
@@ -9,7 +8,7 @@ import java.util.Objects;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
-public class JornadaTrabalho {
+public class NivelAcesso {
     private Long id;
     private String descricao;
 }
