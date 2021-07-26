@@ -2,6 +2,8 @@ package com.dio.access.access.model;
 import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.Objects;
 
@@ -14,6 +16,7 @@ import java.util.Objects;
 @Entity
 public class JornadaTrabalho {
     @Id
+    @GeneratedValue
     private Long id;
     private String descricao;
 }
