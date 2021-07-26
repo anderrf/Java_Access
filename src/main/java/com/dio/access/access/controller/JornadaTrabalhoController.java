@@ -35,7 +35,7 @@ public class JornadaTrabalhoController {
         return jornadaService.updateJornada(jornadaTrabalho);
     }
 
-    @GetMapping("/{idJornada}")
+    @DeleteMapping("/{idJornada}")
     public ResponseEntity<JornadaTrabalho> deleteById(@PathVariable("idJornada") Long idJornada) throws NoSuchElementException{
         try{
             jornadaService.deleteJornada(idJornada);
